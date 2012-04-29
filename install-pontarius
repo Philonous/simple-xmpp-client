@@ -1,0 +1,4 @@
+#!/bin/sh
+(cd ../pontarius; cabal-dev clean)
+cabal-dev install ../pontarius --reinstall
+cabal-dev configure && cabal-dev build
